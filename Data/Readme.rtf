@@ -1,0 +1,13 @@
+Explanation of files 
+
+*) signed_bytes/unsigned_bytes
+	These files where constructed with 
+      make /o/B/n=255 w=p
+	and saved to file with: 
+      FBinWrite /b=2/f=1/U refnum, w  (Big endian signed int 1 byte)
+	and: 
+      FBinWrite /b=2/f=1 refnum, w    (Big endian unsigned int 1 byte)\
+
+*)  david_system.bin: 10s of photodiode recording using davids system (only 1 channel)\
+    pablo_FIFO:	10s of my system, all channels recorded
+    pablo.bin:  header from david's system to use with pablo_FIFO in reconstructing a file
