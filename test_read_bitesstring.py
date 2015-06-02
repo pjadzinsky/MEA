@@ -2,6 +2,8 @@ from nose.tools import *
 import numpy as np
 import pdb
 
+__all__ = ['test_sign_unsigned', 'test_fromfile']
+
 def test_sign_unsigned():
     """
     In the recording computer (a PC) I made a wave of bytes like this
